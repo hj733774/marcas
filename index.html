@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Tenis Futurista</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid red;
+        }
+
+        header h1 {
+            margin: 0;
+            color: red;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        .seccion {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .intro {
+            background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+        }
+
+        .intro h2 {
+            color: red;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .productos,
+        .ofertas {
+            background-color: #121212;
+        }
+
+        .productos h2,
+        .ofertas h2,
+        .contacto h2 {
+            color: red;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .item {
+            background-color: #1e1e1e;
+            border: 2px solid red;
+            border-radius: 10px;
+            width: 280px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .item p {
+            color: #ff4d4d;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        .contacto {
+            background-color: #0a0a0a;
+        }
+
+        .contacto p {
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 20px;
+            color: red;
+            border-top: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>FuturaSneaks</h1>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="puma.html">Productos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="seccion intro" id="inicio">
+        <h2>Bienvenido a FuturaSneaks</h2>
+        <p>En nuestra tienda te ofrecemos los mejores tenis con un estilo único, tecnología avanzada y diseño futurista.
+            Descubre modelos exclusivos de Nike, Adidas y Puma.</p>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="seccion productos" id="productos">
+        <h2>Productos Destacados</h2>
+        <div class="galeria">
+            <div class="item">
+                <img src="https://dailysole.com/wp-content/uploads/2023/07/Nike-Dunk-Low-Cyber-Reflective-FZ3781-060-1024x576.jpg"
+                    alt="Nike X">
+                <p>Nike X-Cyber</p>
+            </div>
+            <div class="item">
+                <img src="https://cdn-img.poizonapp.com/pro-img/origin-img/20230707/7dd616ee97f64c5dab636f1fb8b77ada.jpg?x-oss-process=image/format,webp"
+                    alt="Adidas Neo">
+                <p>Adidas NeoRunner</p>
+            </div>
+            <div class="item">
+                <img src="https://www.nicekicks.com/files/2024/06/marvel-puma-rs-xl-blade-397743-01-4-500x500.jpg"
+                    alt="Puma Fire">
+                <p>Puma FireBlade</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTAS -->
+    <section class="seccion ofertas" id="ofertas">
+        <h2>Ofertas Exclusivas</h2 <div class="galeria">
+        <div class="item">
+            <img src="https://images.prodirectsport.com/ProductImages/Main/1001578_Main_Thumb_1427641.jpg"
+                alt="Oferta 1">
+
+            <p>Nike Phantom - 50% OFF</p>
+        </div>
+        <div class="item">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.YmIYq9xJu3WEKFb_ZlPZXAHaE8?pid=Api&P=0&h=180" alt="Oferta 2">
+            <p>Adidas Future - 30% OFF</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="seccion contacto" id="contacto">
+        <h2>Contacto</h2>
+        <p>📍 Dirección: Av. del Futuro #123, Ciudad Ciber</p>
+        <p>📞 Teléfono: +52 55 1234 5678</p>
+        <p>✉️ Correo: contacto@futurasneaks.com</p>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2025 FuturaSneaks. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
